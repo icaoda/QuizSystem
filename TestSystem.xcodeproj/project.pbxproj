@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B513E1D61C434327004381F1 /* QSConfigTableSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = B513E1D51C434327004381F1 /* QSConfigTableSetting.m */; };
+		B52B95631C12EAD800878E01 /* QSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B95611C12EAD800878E01 /* QSLoginViewController.m */; };
+		B52B95641C12EAD800878E01 /* QSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52B95621C12EAD800878E01 /* QSLoginViewController.xib */; };
+		B52E41B71C476F7700F860A2 /* QSQuizAnalysis.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E41B61C476F7700F860A2 /* QSQuizAnalysis.m */; };
+		B52E41B91C476F9900F860A2 /* QSQuiz.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52E41B81C476F9900F860A2 /* QSQuiz.xib */; };
+		B53358AE1C488D4F00AC662F /* QSQuizSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = B53358AD1C488D4F00AC662F /* QSQuizSelection.m */; };
+		B53358B11C488FA900AC662F /* QSConfigTablePaper.m in Sources */ = {isa = PBXBuildFile; fileRef = B53358B01C488FA900AC662F /* QSConfigTablePaper.m */; };
+		B5407A1B1C16686B0012528C /* QSPaperCount.m in Sources */ = {isa = PBXBuildFile; fileRef = B5407A1A1C16686B0012528C /* QSPaperCount.m */; };
+		B5407A1E1C166D580012528C /* QSQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = B5407A1D1C166D580012528C /* QSQuestion.m */; };
+		B5407A211C16713A0012528C /* QSPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = B5407A201C16713A0012528C /* QSPaper.m */; };
+		B55188961C12CF48009B7078 /* QSLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55188941C12CF48009B7078 /* QSLeftViewController.m */; };
+		B55188971C12CF48009B7078 /* QSLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55188951C12CF48009B7078 /* QSLeftViewController.xib */; };
+		B551889C1C12DB8B009B7078 /* QSRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B551889A1C12DB8B009B7078 /* QSRightViewController.m */; };
+		B551889D1C12DB8B009B7078 /* QSRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B551889B1C12DB8B009B7078 /* QSRightViewController.xib */; };
+		B57701F51C12C6B800848603 /* QSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57701F41C12C6B800848603 /* QSAppDelegate.m */; };
+		B57701F81C12C6B800848603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57701F71C12C6B800848603 /* main.m */; };
+		B57701FB1C12C6B800848603 /* QSSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57701FA1C12C6B800848603 /* QSSplitViewController.m */; };
+		B57701FD1C12C6B800848603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57701FC1C12C6B800848603 /* Assets.xcassets */; };
+		B57702001C12C6B800848603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57701FE1C12C6B800848603 /* Main.storyboard */; };
+		B5839C291C45CE7300719629 /* QSConfigTableUnread.m in Sources */ = {isa = PBXBuildFile; fileRef = B5839C281C45CE7300719629 /* QSConfigTableUnread.m */; };
+		B5A2A5141C1B9D9C007EB1CD /* QSConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5A2A5131C1B9D9C007EB1CD /* QSConfiguration.plist */; };
+		B5ABD92B1C1AB9E80055C471 /* NSString+ExamPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ABD92A1C1AB9E80055C471 /* NSString+ExamPaper.m */; };
+		B5B0FC901C4E0D9E00D81D8B /* QSTestTableObjective.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FC8F1C4E0D9E00D81D8B /* QSTestTableObjective.m */; };
+		B5B0FC931C4E0DBD00D81D8B /* QSTestTableSubjective.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FC921C4E0DBD00D81D8B /* QSTestTableSubjective.m */; };
+		B5B0FC961C4E150E00D81D8B /* QSTestingTab.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FC951C4E150E00D81D8B /* QSTestingTab.m */; };
+		B5B0FC9B1C4E1ABB00D81D8B /* QSJudgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FC9A1C4E1ABB00D81D8B /* QSJudgeCell.m */; };
+		B5B0FC9E1C4E1ACA00D81D8B /* QSSingleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FC9D1C4E1ACA00D81D8B /* QSSingleCell.m */; };
+		B5B0FCA11C4E1AD900D81D8B /* QSMultipleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FCA01C4E1AD900D81D8B /* QSMultipleCell.m */; };
+		B5B0FCA71C4E44F300D81D8B /* QSAnalysisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0FCA61C4E44F300D81D8B /* QSAnalysisCell.m */; };
+		B5B581401C15214A00AF0AEC /* QSConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B5813E1C15214A00AF0AEC /* QSConfigViewController.m */; };
+		B5B581411C15214A00AF0AEC /* QSConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B5813F1C15214A00AF0AEC /* QSConfigViewController.xib */; };
+		B5B581451C15269800AF0AEC /* QSLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581431C15269800AF0AEC /* QSLoadingViewController.m */; };
+		B5B581461C15269800AF0AEC /* QSLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B581441C15269800AF0AEC /* QSLoadingViewController.xib */; };
+		B5B5814A1C152C8E00AF0AEC /* QSReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581481C152C8E00AF0AEC /* QSReviewViewController.m */; };
+		B5B5814B1C152C8E00AF0AEC /* QSReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B581491C152C8E00AF0AEC /* QSReviewViewController.xib */; };
+		B5B581561C153EF000AF0AEC /* QSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581541C153EF000AF0AEC /* QSTestViewController.m */; };
+		B5B581571C153EF000AF0AEC /* QSTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B581551C153EF000AF0AEC /* QSTestViewController.xib */; };
+		B5B5815B1C1541B000AF0AEC /* QSPaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581591C1541B000AF0AEC /* QSPaperViewController.m */; };
+		B5B5815C1C1541B000AF0AEC /* QSPaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B5815A1C1541B000AF0AEC /* QSPaperViewController.xib */; };
+		B5B581601C1541C500AF0AEC /* QSRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B5815E1C1541C500AF0AEC /* QSRecordViewController.m */; };
+		B5B581611C1541C500AF0AEC /* QSRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B5815F1C1541C500AF0AEC /* QSRecordViewController.xib */; };
+		B5B581661C1575B200AF0AEC /* QSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581651C1575B200AF0AEC /* QSUser.m */; };
+		B5B581691C1575CD00AF0AEC /* QSAdministrator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581681C1575CD00AF0AEC /* QSAdministrator.m */; };
+		B5B5816C1C1575D900AF0AEC /* QSTester.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B5816B1C1575D900AF0AEC /* QSTester.m */; };
+		B5B5816F1C15796900AF0AEC /* QSMysql.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B5816E1C15796900AF0AEC /* QSMysql.m */; };
+		B5B581731C15A1CD00AF0AEC /* QSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B581721C15A1CD00AF0AEC /* QSTools.m */; };
+		B5BA13251C278B0B004CAF38 /* QSPreferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA13241C278B0B004CAF38 /* QSPreferenceVC.m */; };
+		B5F049291C20021400B6BC53 /* Template.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5F049281C20021400B6BC53 /* Template.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B513E1D41C434327004381F1 /* QSConfigTableSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSConfigTableSetting.h; sourceTree = "<group>"; };
+		B513E1D51C434327004381F1 /* QSConfigTableSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSConfigTableSetting.m; sourceTree = "<group>"; };
+		B52B95601C12EAD800878E01 /* QSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSLoginViewController.h; sourceTree = "<group>"; };
+		B52B95611C12EAD800878E01 /* QSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSLoginViewController.m; sourceTree = "<group>"; };
+		B52B95621C12EAD800878E01 /* QSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSLoginViewController.xib; sourceTree = "<group>"; };
+		B52E41B51C476F7700F860A2 /* QSQuizAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSQuizAnalysis.h; sourceTree = "<group>"; };
+		B52E41B61C476F7700F860A2 /* QSQuizAnalysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSQuizAnalysis.m; sourceTree = "<group>"; };
+		B52E41B81C476F9900F860A2 /* QSQuiz.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSQuiz.xib; sourceTree = "<group>"; };
+		B53358AC1C488D4F00AC662F /* QSQuizSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSQuizSelection.h; sourceTree = "<group>"; };
+		B53358AD1C488D4F00AC662F /* QSQuizSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSQuizSelection.m; sourceTree = "<group>"; };
+		B53358AF1C488FA900AC662F /* QSConfigTablePaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSConfigTablePaper.h; sourceTree = "<group>"; };
+		B53358B01C488FA900AC662F /* QSConfigTablePaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSConfigTablePaper.m; sourceTree = "<group>"; };
+		B5407A191C16686B0012528C /* QSPaperCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPaperCount.h; sourceTree = "<group>"; };
+		B5407A1A1C16686B0012528C /* QSPaperCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPaperCount.m; sourceTree = "<group>"; };
+		B5407A1C1C166D580012528C /* QSQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSQuestion.h; sourceTree = "<group>"; };
+		B5407A1D1C166D580012528C /* QSQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSQuestion.m; sourceTree = "<group>"; };
+		B5407A1F1C16713A0012528C /* QSPaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPaper.h; sourceTree = "<group>"; };
+		B5407A201C16713A0012528C /* QSPaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPaper.m; sourceTree = "<group>"; };
+		B55188931C12CF48009B7078 /* QSLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSLeftViewController.h; sourceTree = "<group>"; };
+		B55188941C12CF48009B7078 /* QSLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSLeftViewController.m; sourceTree = "<group>"; };
+		B55188951C12CF48009B7078 /* QSLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSLeftViewController.xib; sourceTree = "<group>"; };
+		B55188981C12D785009B7078 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B55188991C12DB8B009B7078 /* QSRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSRightViewController.h; sourceTree = "<group>"; };
+		B551889A1C12DB8B009B7078 /* QSRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSRightViewController.m; sourceTree = "<group>"; };
+		B551889B1C12DB8B009B7078 /* QSRightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSRightViewController.xib; sourceTree = "<group>"; };
+		B57701F01C12C6B800848603 /* TestSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57701F31C12C6B800848603 /* QSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSAppDelegate.h; sourceTree = "<group>"; };
+		B57701F41C12C6B800848603 /* QSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSAppDelegate.m; sourceTree = "<group>"; };
+		B57701F71C12C6B800848603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B57701F91C12C6B800848603 /* QSSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSSplitViewController.h; sourceTree = "<group>"; };
+		B57701FA1C12C6B800848603 /* QSSplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSSplitViewController.m; sourceTree = "<group>"; };
+		B57701FC1C12C6B800848603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57701FF1C12C6B800848603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57702011C12C6B800848603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5839C271C45CE7300719629 /* QSConfigTableUnread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSConfigTableUnread.h; sourceTree = "<group>"; };
+		B5839C281C45CE7300719629 /* QSConfigTableUnread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSConfigTableUnread.m; sourceTree = "<group>"; };
+		B5A2A5131C1B9D9C007EB1CD /* QSConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QSConfiguration.plist; sourceTree = "<group>"; };
+		B5ABD9291C1AB9E80055C471 /* NSString+ExamPaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ExamPaper.h"; sourceTree = "<group>"; };
+		B5ABD92A1C1AB9E80055C471 /* NSString+ExamPaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ExamPaper.m"; sourceTree = "<group>"; };
+		B5B0FC8E1C4E0D9E00D81D8B /* QSTestTableObjective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTestTableObjective.h; sourceTree = "<group>"; };
+		B5B0FC8F1C4E0D9E00D81D8B /* QSTestTableObjective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTestTableObjective.m; sourceTree = "<group>"; };
+		B5B0FC911C4E0DBD00D81D8B /* QSTestTableSubjective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTestTableSubjective.h; sourceTree = "<group>"; };
+		B5B0FC921C4E0DBD00D81D8B /* QSTestTableSubjective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTestTableSubjective.m; sourceTree = "<group>"; };
+		B5B0FC941C4E150E00D81D8B /* QSTestingTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTestingTab.h; sourceTree = "<group>"; };
+		B5B0FC951C4E150E00D81D8B /* QSTestingTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTestingTab.m; sourceTree = "<group>"; };
+		B5B0FC991C4E1ABB00D81D8B /* QSJudgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSJudgeCell.h; sourceTree = "<group>"; };
+		B5B0FC9A1C4E1ABB00D81D8B /* QSJudgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSJudgeCell.m; sourceTree = "<group>"; };
+		B5B0FC9C1C4E1ACA00D81D8B /* QSSingleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSingleCell.h; sourceTree = "<group>"; };
+		B5B0FC9D1C4E1ACA00D81D8B /* QSSingleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSingleCell.m; sourceTree = "<group>"; };
+		B5B0FC9F1C4E1AD900D81D8B /* QSMultipleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMultipleCell.h; sourceTree = "<group>"; };
+		B5B0FCA01C4E1AD900D81D8B /* QSMultipleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMultipleCell.m; sourceTree = "<group>"; };
+		B5B0FCA51C4E44F300D81D8B /* QSAnalysisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAnalysisCell.h; sourceTree = "<group>"; };
+		B5B0FCA61C4E44F300D81D8B /* QSAnalysisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSAnalysisCell.m; sourceTree = "<group>"; };
+		B5B5813D1C15214A00AF0AEC /* QSConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSConfigViewController.h; sourceTree = "<group>"; };
+		B5B5813E1C15214A00AF0AEC /* QSConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSConfigViewController.m; sourceTree = "<group>"; };
+		B5B5813F1C15214A00AF0AEC /* QSConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSConfigViewController.xib; sourceTree = "<group>"; };
+		B5B581421C15269800AF0AEC /* QSLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSLoadingViewController.h; sourceTree = "<group>"; };
+		B5B581431C15269800AF0AEC /* QSLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSLoadingViewController.m; sourceTree = "<group>"; };
+		B5B581441C15269800AF0AEC /* QSLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSLoadingViewController.xib; sourceTree = "<group>"; };
+		B5B581471C152C8E00AF0AEC /* QSReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSReviewViewController.h; sourceTree = "<group>"; };
+		B5B581481C152C8E00AF0AEC /* QSReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSReviewViewController.m; sourceTree = "<group>"; };
+		B5B581491C152C8E00AF0AEC /* QSReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSReviewViewController.xib; sourceTree = "<group>"; };
+		B5B581521C1534FF00AF0AEC /* QSMiddlePanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSMiddlePanel.h; sourceTree = "<group>"; };
+		B5B581531C153EF000AF0AEC /* QSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTestViewController.h; sourceTree = "<group>"; };
+		B5B581541C153EF000AF0AEC /* QSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTestViewController.m; sourceTree = "<group>"; };
+		B5B581551C153EF000AF0AEC /* QSTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSTestViewController.xib; sourceTree = "<group>"; };
+		B5B581581C1541B000AF0AEC /* QSPaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPaperViewController.h; sourceTree = "<group>"; };
+		B5B581591C1541B000AF0AEC /* QSPaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPaperViewController.m; sourceTree = "<group>"; };
+		B5B5815A1C1541B000AF0AEC /* QSPaperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSPaperViewController.xib; sourceTree = "<group>"; };
+		B5B5815D1C1541C500AF0AEC /* QSRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSRecordViewController.h; sourceTree = "<group>"; };
+		B5B5815E1C1541C500AF0AEC /* QSRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSRecordViewController.m; sourceTree = "<group>"; };
+		B5B5815F1C1541C500AF0AEC /* QSRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSRecordViewController.xib; sourceTree = "<group>"; };
+		B5B581641C1575B200AF0AEC /* QSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSUser.h; sourceTree = "<group>"; };
+		B5B581651C1575B200AF0AEC /* QSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSUser.m; sourceTree = "<group>"; };
+		B5B581671C1575CD00AF0AEC /* QSAdministrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAdministrator.h; sourceTree = "<group>"; };
+		B5B581681C1575CD00AF0AEC /* QSAdministrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSAdministrator.m; sourceTree = "<group>"; };
+		B5B5816A1C1575D900AF0AEC /* QSTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTester.h; sourceTree = "<group>"; };
+		B5B5816B1C1575D900AF0AEC /* QSTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTester.m; sourceTree = "<group>"; };
+		B5B5816D1C15796900AF0AEC /* QSMysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSMysql.h; sourceTree = "<group>"; };
+		B5B5816E1C15796900AF0AEC /* QSMysql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSMysql.m; sourceTree = "<group>"; };
+		B5B581711C15A1CD00AF0AEC /* QSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTools.h; sourceTree = "<group>"; };
+		B5B581721C15A1CD00AF0AEC /* QSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTools.m; sourceTree = "<group>"; };
+		B5BA13231C278B0B004CAF38 /* QSPreferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPreferenceVC.h; sourceTree = "<group>"; };
+		B5BA13241C278B0B004CAF38 /* QSPreferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPreferenceVC.m; sourceTree = "<group>"; };
+		B5F049281C20021400B6BC53 /* Template.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Template.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57701ED1C12C6B800848603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B52E41B41C4728DF00F860A2 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B513E1D41C434327004381F1 /* QSConfigTableSetting.h */,
+				B513E1D51C434327004381F1 /* QSConfigTableSetting.m */,
+				B5839C271C45CE7300719629 /* QSConfigTableUnread.h */,
+				B5839C281C45CE7300719629 /* QSConfigTableUnread.m */,
+				B53358AF1C488FA900AC662F /* QSConfigTablePaper.h */,
+				B53358B01C488FA900AC662F /* QSConfigTablePaper.m */,
+				B5B5813D1C15214A00AF0AEC /* QSConfigViewController.h */,
+				B5B5813E1C15214A00AF0AEC /* QSConfigViewController.m */,
+				B5B5813F1C15214A00AF0AEC /* QSConfigViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		B5407A181C1668350012528C /* ExamPaper */ = {
+			isa = PBXGroup;
+			children = (
+				B5407A1C1C166D580012528C /* QSQuestion.h */,
+				B5407A1D1C166D580012528C /* QSQuestion.m */,
+				B5407A191C16686B0012528C /* QSPaperCount.h */,
+				B5407A1A1C16686B0012528C /* QSPaperCount.m */,
+				B5407A1F1C16713A0012528C /* QSPaper.h */,
+				B5407A201C16713A0012528C /* QSPaper.m */,
+			);
+			name = ExamPaper;
+			sourceTree = "<group>";
+		};
+		B57701E71C12C6B800848603 = {
+			isa = PBXGroup;
+			children = (
+				B57701F21C12C6B800848603 /* TestSystem */,
+				B57701F11C12C6B800848603 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B57701F11C12C6B800848603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57701F01C12C6B800848603 /* TestSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57701F21C12C6B800848603 /* TestSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B5F049281C20021400B6BC53 /* Template.txt */,
+				B5A2A5131C1B9D9C007EB1CD /* QSConfiguration.plist */,
+				B55188981C12D785009B7078 /* Constants.h */,
+				B5B581711C15A1CD00AF0AEC /* QSTools.h */,
+				B5B581721C15A1CD00AF0AEC /* QSTools.m */,
+				B57701F31C12C6B800848603 /* QSAppDelegate.h */,
+				B57701F41C12C6B800848603 /* QSAppDelegate.m */,
+				B57701F91C12C6B800848603 /* QSSplitViewController.h */,
+				B57701FA1C12C6B800848603 /* QSSplitViewController.m */,
+				B5B581631C15758300AF0AEC /* Model */,
+				B5B581621C15756400AF0AEC /* ViewControllers */,
+				B57701FC1C12C6B800848603 /* Assets.xcassets */,
+				B57701FE1C12C6B800848603 /* Main.storyboard */,
+				B57702011C12C6B800848603 /* Info.plist */,
+				B57701F61C12C6B800848603 /* Supporting Files */,
+			);
+			name = TestSystem;
+			path = QuizzesSystem;
+			sourceTree = "<group>";
+		};
+		B57701F61C12C6B800848603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B57701F71C12C6B800848603 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B586C5721C4FB0C80021F2B6 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				B5B581581C1541B000AF0AEC /* QSPaperViewController.h */,
+				B5B581591C1541B000AF0AEC /* QSPaperViewController.m */,
+				B5B5815A1C1541B000AF0AEC /* QSPaperViewController.xib */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
+		B586C5731C4FB0E20021F2B6 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				B5B5815D1C1541C500AF0AEC /* QSRecordViewController.h */,
+				B5B5815E1C1541C500AF0AEC /* QSRecordViewController.m */,
+				B5B5815F1C1541C500AF0AEC /* QSRecordViewController.xib */,
+			);
+			name = Query;
+			sourceTree = "<group>";
+		};
+		B5B0FC8D1C4E0D1A00D81D8B /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				B5B0FC8E1C4E0D9E00D81D8B /* QSTestTableObjective.h */,
+				B5B0FC8F1C4E0D9E00D81D8B /* QSTestTableObjective.m */,
+				B5B0FC911C4E0DBD00D81D8B /* QSTestTableSubjective.h */,
+				B5B0FC921C4E0DBD00D81D8B /* QSTestTableSubjective.m */,
+				B5B0FC941C4E150E00D81D8B /* QSTestingTab.h */,
+				B5B0FC951C4E150E00D81D8B /* QSTestingTab.m */,
+				B5B581531C153EF000AF0AEC /* QSTestViewController.h */,
+				B5B581541C153EF000AF0AEC /* QSTestViewController.m */,
+				B5B581551C153EF000AF0AEC /* QSTestViewController.xib */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
+		B5B0FC971C4E1A4200D81D8B /* AdminCells */ = {
+			isa = PBXGroup;
+			children = (
+				B52E41B51C476F7700F860A2 /* QSQuizAnalysis.h */,
+				B52E41B61C476F7700F860A2 /* QSQuizAnalysis.m */,
+				B53358AC1C488D4F00AC662F /* QSQuizSelection.h */,
+				B53358AD1C488D4F00AC662F /* QSQuizSelection.m */,
+				B52E41B81C476F9900F860A2 /* QSQuiz.xib */,
+			);
+			name = AdminCells;
+			sourceTree = "<group>";
+		};
+		B5B0FC981C4E1A6A00D81D8B /* TesterCells */ = {
+			isa = PBXGroup;
+			children = (
+				B5B0FC991C4E1ABB00D81D8B /* QSJudgeCell.h */,
+				B5B0FC9A1C4E1ABB00D81D8B /* QSJudgeCell.m */,
+				B5B0FC9C1C4E1ACA00D81D8B /* QSSingleCell.h */,
+				B5B0FC9D1C4E1ACA00D81D8B /* QSSingleCell.m */,
+				B5B0FC9F1C4E1AD900D81D8B /* QSMultipleCell.h */,
+				B5B0FCA01C4E1AD900D81D8B /* QSMultipleCell.m */,
+				B5B0FCA51C4E44F300D81D8B /* QSAnalysisCell.h */,
+				B5B0FCA61C4E44F300D81D8B /* QSAnalysisCell.m */,
+			);
+			name = TesterCells;
+			sourceTree = "<group>";
+		};
+		B5B5814D1C1533DF00AF0AEC /* LeftPanel */ = {
+			isa = PBXGroup;
+			children = (
+				B55188931C12CF48009B7078 /* QSLeftViewController.h */,
+				B55188941C12CF48009B7078 /* QSLeftViewController.m */,
+				B55188951C12CF48009B7078 /* QSLeftViewController.xib */,
+			);
+			name = LeftPanel;
+			sourceTree = "<group>";
+		};
+		B5B5814E1C1533EF00AF0AEC /* RightPanel */ = {
+			isa = PBXGroup;
+			children = (
+				B55188991C12DB8B009B7078 /* QSRightViewController.h */,
+				B551889A1C12DB8B009B7078 /* QSRightViewController.m */,
+				B551889B1C12DB8B009B7078 /* QSRightViewController.xib */,
+			);
+			name = RightPanel;
+			sourceTree = "<group>";
+		};
+		B5B5814F1C15340300AF0AEC /* MiddlePanel */ = {
+			isa = PBXGroup;
+			children = (
+				B5B581521C1534FF00AF0AEC /* QSMiddlePanel.h */,
+				B52B95601C12EAD800878E01 /* QSLoginViewController.h */,
+				B52B95611C12EAD800878E01 /* QSLoginViewController.m */,
+				B52B95621C12EAD800878E01 /* QSLoginViewController.xib */,
+				B5B581501C15347C00AF0AEC /* Administrator */,
+				B5B581511C1534A000AF0AEC /* Tester */,
+			);
+			name = MiddlePanel;
+			sourceTree = "<group>";
+		};
+		B5B581501C15347C00AF0AEC /* Administrator */ = {
+			isa = PBXGroup;
+			children = (
+				B52E41B41C4728DF00F860A2 /* Setting */,
+				B5F39C181C4CEFF3008D53C6 /* Loading */,
+				B5F39C191C4CF010008D53C6 /* Query */,
+			);
+			name = Administrator;
+			sourceTree = "<group>";
+		};
+		B5B581511C1534A000AF0AEC /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				B5B0FC8D1C4E0D1A00D81D8B /* Testing */,
+				B586C5721C4FB0C80021F2B6 /* Summary */,
+				B586C5731C4FB0E20021F2B6 /* Query */,
+			);
+			name = Tester;
+			sourceTree = "<group>";
+		};
+		B5B581621C15756400AF0AEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA13221C2789C3004CAF38 /* Preference */,
+				B5B5814D1C1533DF00AF0AEC /* LeftPanel */,
+				B5B5814E1C1533EF00AF0AEC /* RightPanel */,
+				B5B5814F1C15340300AF0AEC /* MiddlePanel */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5B581631C15758300AF0AEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5B581701C15797F00AF0AEC /* User */,
+				B5407A181C1668350012528C /* ExamPaper */,
+				B5B5816D1C15796900AF0AEC /* QSMysql.h */,
+				B5B5816E1C15796900AF0AEC /* QSMysql.m */,
+				B5ABD9291C1AB9E80055C471 /* NSString+ExamPaper.h */,
+				B5ABD92A1C1AB9E80055C471 /* NSString+ExamPaper.m */,
+				B5B0FC981C4E1A6A00D81D8B /* TesterCells */,
+				B5B0FC971C4E1A4200D81D8B /* AdminCells */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5B581701C15797F00AF0AEC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B5B581641C1575B200AF0AEC /* QSUser.h */,
+				B5B581651C1575B200AF0AEC /* QSUser.m */,
+				B5B5816A1C1575D900AF0AEC /* QSTester.h */,
+				B5B5816B1C1575D900AF0AEC /* QSTester.m */,
+				B5B581671C1575CD00AF0AEC /* QSAdministrator.h */,
+				B5B581681C1575CD00AF0AEC /* QSAdministrator.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		B5BA13221C2789C3004CAF38 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA13231C278B0B004CAF38 /* QSPreferenceVC.h */,
+				B5BA13241C278B0B004CAF38 /* QSPreferenceVC.m */,
+			);
+			name = Preference;
+			sourceTree = "<group>";
+		};
+		B5F39C181C4CEFF3008D53C6 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				B5B581421C15269800AF0AEC /* QSLoadingViewController.h */,
+				B5B581431C15269800AF0AEC /* QSLoadingViewController.m */,
+				B5B581441C15269800AF0AEC /* QSLoadingViewController.xib */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		B5F39C191C4CF010008D53C6 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				B5B581471C152C8E00AF0AEC /* QSReviewViewController.h */,
+				B5B581481C152C8E00AF0AEC /* QSReviewViewController.m */,
+				B5B581491C152C8E00AF0AEC /* QSReviewViewController.xib */,
+			);
+			name = Query;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57701EF1C12C6B800848603 /* TestSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57702041C12C6B800848603 /* Build configuration list for PBXNativeTarget "TestSystem" */;
+			buildPhases = (
+				B57701EC1C12C6B800848603 /* Sources */,
+				B57701ED1C12C6B800848603 /* Frameworks */,
+				B57701EE1C12C6B800848603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestSystem;
+			productName = QuizzesSystem;
+			productReference = B57701F01C12C6B800848603 /* TestSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57701E81C12C6B800848603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "TDE-SMTFA05";
+				TargetAttributes = {
+					B57701EF1C12C6B800848603 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = R82F85QWZH;
+					};
+				};
+			};
+			buildConfigurationList = B57701EB1C12C6B800848603 /* Build configuration list for PBXProject "TestSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B57701E71C12C6B800848603;
+			productRefGroup = B57701F11C12C6B800848603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57701EF1C12C6B800848603 /* TestSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B57701EE1C12C6B800848603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B5814B1C152C8E00AF0AEC /* QSReviewViewController.xib in Resources */,
+				B57701FD1C12C6B800848603 /* Assets.xcassets in Resources */,
+				B57702001C12C6B800848603 /* Main.storyboard in Resources */,
+				B5B581461C15269800AF0AEC /* QSLoadingViewController.xib in Resources */,
+				B55188971C12CF48009B7078 /* QSLeftViewController.xib in Resources */,
+				B551889D1C12DB8B009B7078 /* QSRightViewController.xib in Resources */,
+				B5B581411C15214A00AF0AEC /* QSConfigViewController.xib in Resources */,
+				B5B581571C153EF000AF0AEC /* QSTestViewController.xib in Resources */,
+				B52E41B91C476F9900F860A2 /* QSQuiz.xib in Resources */,
+				B52B95641C12EAD800878E01 /* QSLoginViewController.xib in Resources */,
+				B5B5815C1C1541B000AF0AEC /* QSPaperViewController.xib in Resources */,
+				B5B581611C1541C500AF0AEC /* QSRecordViewController.xib in Resources */,
+				B5A2A5141C1B9D9C007EB1CD /* QSConfiguration.plist in Resources */,
+				B5F049291C20021400B6BC53 /* Template.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57701EC1C12C6B800848603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5ABD92B1C1AB9E80055C471 /* NSString+ExamPaper.m in Sources */,
+				B5839C291C45CE7300719629 /* QSConfigTableUnread.m in Sources */,
+				B57701FB1C12C6B800848603 /* QSSplitViewController.m in Sources */,
+				B5B581601C1541C500AF0AEC /* QSRecordViewController.m in Sources */,
+				B5B581731C15A1CD00AF0AEC /* QSTools.m in Sources */,
+				B5407A1E1C166D580012528C /* QSQuestion.m in Sources */,
+				B5BA13251C278B0B004CAF38 /* QSPreferenceVC.m in Sources */,
+				B551889C1C12DB8B009B7078 /* QSRightViewController.m in Sources */,
+				B57701F81C12C6B800848603 /* main.m in Sources */,
+				B53358AE1C488D4F00AC662F /* QSQuizSelection.m in Sources */,
+				B5B0FCA71C4E44F300D81D8B /* QSAnalysisCell.m in Sources */,
+				B5B0FC901C4E0D9E00D81D8B /* QSTestTableObjective.m in Sources */,
+				B57701F51C12C6B800848603 /* QSAppDelegate.m in Sources */,
+				B5B581561C153EF000AF0AEC /* QSTestViewController.m in Sources */,
+				B53358B11C488FA900AC662F /* QSConfigTablePaper.m in Sources */,
+				B5B0FC931C4E0DBD00D81D8B /* QSTestTableSubjective.m in Sources */,
+				B52B95631C12EAD800878E01 /* QSLoginViewController.m in Sources */,
+				B5B581691C1575CD00AF0AEC /* QSAdministrator.m in Sources */,
+				B5B5815B1C1541B000AF0AEC /* QSPaperViewController.m in Sources */,
+				B5B5816C1C1575D900AF0AEC /* QSTester.m in Sources */,
+				B513E1D61C434327004381F1 /* QSConfigTableSetting.m in Sources */,
+				B5407A211C16713A0012528C /* QSPaper.m in Sources */,
+				B5B581451C15269800AF0AEC /* QSLoadingViewController.m in Sources */,
+				B5B0FCA11C4E1AD900D81D8B /* QSMultipleCell.m in Sources */,
+				B5B581401C15214A00AF0AEC /* QSConfigViewController.m in Sources */,
+				B5B0FC9E1C4E1ACA00D81D8B /* QSSingleCell.m in Sources */,
+				B5407A1B1C16686B0012528C /* QSPaperCount.m in Sources */,
+				B55188961C12CF48009B7078 /* QSLeftViewController.m in Sources */,
+				B5B581661C1575B200AF0AEC /* QSUser.m in Sources */,
+				B5B0FC9B1C4E1ABB00D81D8B /* QSJudgeCell.m in Sources */,
+				B5B0FC961C4E150E00D81D8B /* QSTestingTab.m in Sources */,
+				B52E41B71C476F7700F860A2 /* QSQuizAnalysis.m in Sources */,
+				B5B5816F1C15796900AF0AEC /* QSMysql.m in Sources */,
+				B5B5814A1C152C8E00AF0AEC /* QSReviewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B57701FE1C12C6B800848603 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57701FF1C12C6B800848603 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B57702021C12C6B800848603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/mysql/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/mysql/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lmysqlclient",
+					"-lm",
+					"-lz",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B57702031C12C6B800848603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/mysql/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/mysql/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lmysqlclient",
+					"-lm",
+					"-lz",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B57702051C12C6B800848603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuizzesSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.efoxconn.idsbgcd.QuizzesSystem;
+				PRODUCT_NAME = TestSystem;
+			};
+			name = Debug;
+		};
+		B57702061C12C6B800848603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuizzesSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.efoxconn.idsbgcd.QuizzesSystem;
+				PRODUCT_NAME = TestSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57701EB1C12C6B800848603 /* Build configuration list for PBXProject "TestSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57702021C12C6B800848603 /* Debug */,
+				B57702031C12C6B800848603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57702041C12C6B800848603 /* Build configuration list for PBXNativeTarget "TestSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57702051C12C6B800848603 /* Debug */,
+				B57702061C12C6B800848603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B57701E81C12C6B800848603 /* Project object */;
+}
