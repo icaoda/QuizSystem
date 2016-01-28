@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/tde-smtfa05/Desktop/QuizzesBundle/QuizzesSystem/TestSystem.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
