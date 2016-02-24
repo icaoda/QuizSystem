@@ -73,14 +73,16 @@
     }
     [self.user login];
     // 如果登陆失败，弹窗提醒
-    QSLoginViewController *mvc = (QSLoginViewController *)[self.splitViewItems objectAtIndex:1].viewController;
+    NSSplitViewItem *splitItem1 = [self.splitViewItems objectAtIndex:1];
+    NSSplitViewItem *splitItem2 = [self.splitViewItems objectAtIndex:2];
+    QSLoginViewController *mvc = (QSLoginViewController *)splitItem1.viewController;
     if (self.user.isLogin == NO) {
         [mvc actionPostLoginFail];
     } else {
         // 如果登陆成功，将用户信息赋值给所有的子对象
-        QSLoginViewController *lgvc = (QSLoginViewController *)[self.splitViewItems objectAtIndex:1].viewController;
+        QSLoginViewController *lgvc = (QSLoginViewController *)splitItem1.viewController;
         [lgvc setUsr:self.user];
-        QSRightViewController *rvc = (QSRightViewController *)[self.splitViewItems objectAtIndex:2].viewController;
+        QSRightViewController *rvc = (QSRightViewController *)splitItem2.viewController;
         [rvc setUser:self.user];
         [mvc setUsr:self.user];
         [mvc actionPostLoginOK];
@@ -106,23 +108,27 @@
     
     if ([notifInfo isEqualToString:NSNotificationInfoStartAdmn] == YES) {
         // 中间视图：加载管理员登陆界面
-        QSLoginViewController *mvc = (QSLoginViewController *)[self.splitViewItems objectAtIndex:1].viewController;
+        NSSplitViewItem *splitItem1 = [self.splitViewItems objectAtIndex:1];
+        QSLoginViewController *mvc = (QSLoginViewController *)splitItem1.viewController;
         [self setIsCurrentUserAdmn:YES];
         [mvc layoutForUser:self.isCurrentUserAdmn];
         
         // 右侧视图：加载管理员功能面板
-        QSRightViewController *rmv = (QSRightViewController *)[self.splitViewItems objectAtIndex:2].viewController;
+        NSSplitViewItem *splitItem2 = [self.splitViewItems objectAtIndex:2];
+        QSRightViewController *rmv = (QSRightViewController *)splitItem2.viewController;
         [rmv layoutForAdministrator];
         [rmv.user setIsLogin:NO];
         
     } else {
         // 中间视图：加载测试登陆界面
-        QSLoginViewController *mvc = (QSLoginViewController *)[self.splitViewItems objectAtIndex:1].viewController;
+        NSSplitViewItem *splitItem1 = [self.splitViewItems objectAtIndex:1];
+        QSLoginViewController *mvc = (QSLoginViewController *)splitItem1.viewController;
         [self setIsCurrentUserAdmn:NO];
         [mvc layoutForUser:self.isCurrentUserAdmn];
         
         // 右侧视图：加载测试功能面板
-        QSRightViewController *rmv = (QSRightViewController *)[self.splitViewItems objectAtIndex:2].viewController;
+        NSSplitViewItem *splitItem2 = [self.splitViewItems objectAtIndex:2];
+        QSRightViewController *rmv = (QSRightViewController *)splitItem2.viewController;
         [rmv layoutForTesting];
         [rmv.user setIsLogin:NO];
     }

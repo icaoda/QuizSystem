@@ -117,7 +117,7 @@ typedef NS_ENUM(NSUInteger, kViewTag) {
     [timeLabel1 setBordered:NO];
     [timeLabel1 setTextColor:[NSColor blackColor]];
     [timeLabel1 setStringValue:@"Time elapsed:"];
-    [timeLabel1 setAlignment:NSTextAlignmentLeft];
+    [timeLabel1 setAlignment:NSLeftTextAlignment];
     [self.view addSubview:timeLabel1];
     // 添加标签: 总时间
     NSTextField *timeLabel2 = [[NSTextField alloc] initWithFrame:CGRectMake(320, 530, 120, 20)];
@@ -125,7 +125,7 @@ typedef NS_ENUM(NSUInteger, kViewTag) {
     [timeLabel2 setBordered:NO];
     [timeLabel2 setTextColor:[NSColor blackColor]];
     [timeLabel2 setStringValue:[NSString stringWithFormat:@"Total %lu', remain:",time]];
-    [timeLabel2 setAlignment:NSTextAlignmentRight];
+    [timeLabel2 setAlignment:NSRightTextAlignment];
     [self.view addSubview:timeLabel2];
     // 时间标签：动态标签3--已用时间
     NSTextField *timeLabel3 = [[NSTextField alloc] initWithFrame:CGRectMake(250, 530, 60, 20)];
@@ -133,7 +133,7 @@ typedef NS_ENUM(NSUInteger, kViewTag) {
     [timeLabel3 setBordered:NO];
     [timeLabel3 setTextColor:[NSColor blueColor]];
     [timeLabel3 setStringValue:@"0'"];
-    [timeLabel3 setAlignment:NSTextAlignmentCenter];
+    [timeLabel3 setAlignment:NSCenterTextAlignment];
     [timeLabel3 setTag:kTagTimeElasped];
     [self.view addSubview:timeLabel3];
     // 时间标签：动态标签4--剩余时间
@@ -142,13 +142,13 @@ typedef NS_ENUM(NSUInteger, kViewTag) {
     [timeLabel4 setBordered:NO];
     [timeLabel4 setTextColor:[NSColor redColor]];
     [timeLabel4 setStringValue:[NSString stringWithFormat:@"%lu'",time]];
-    [timeLabel4 setAlignment:NSTextAlignmentCenter];
+    [timeLabel4 setAlignment:NSCenterTextAlignment];
     [timeLabel4 setTag:kTagTimeRemain];
     [self.view addSubview:timeLabel4];
     // 交卷按钮：提交试卷功能按钮
     NSButton *pudBtn = [[NSButton alloc] initWithFrame:CGRectMake(500, 520, 140, 20)];
     [pudBtn setTitle:@"Examination Over!"];
-    [pudBtn setAlignment:NSTextAlignmentCenter];
+    [pudBtn setAlignment:NSCenterTextAlignment];
     [pudBtn setTag:kTagFinishBtn];
     [pudBtn setTarget:self];
     [pudBtn setAction:@selector(finishedExamination)];

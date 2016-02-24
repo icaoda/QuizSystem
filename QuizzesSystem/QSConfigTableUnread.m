@@ -8,6 +8,7 @@
 
 #define NSNotificationPaperSelected @"NSNotificationPaperSelected"
 #define NSNotificationInfoKey @"NSNotificationInfoKey"
+#define NSNotificationUnreadOK @"NSNotificationUnreadOK"
 
 #import "QSConfigTableUnread.h"
 #import "QSTools.h"
@@ -42,6 +43,9 @@
 - (void)prepareDataModelForView:(QSAdministrator *)user {
     [self setUser:user];
     [self parseDataFromServer];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadData)
+                                                 name:NSNotificationUnreadOK object:nil];
 }
 
 - (void)parseDataFromServer {
